@@ -33,8 +33,8 @@ for (z,i) in enumerate(Chapter):
 		file_object.write(Content[0])
 		file_object.write('<br /> <a href=\"Chapter '+str(z-1)+'.html\">上一章</a>')	
 		file_object.write('&nbsp&nbsp&nbsp&nbsp<a href=\"Chapter '+str(z+1)+'.html\">下一章</a>')
-	
-
+with open('zhengwen/number.txt','w') as listedit:
+	listedit.write(str(z+1))
 
 '''
 #获取每章节标题，获取有问题，作废
